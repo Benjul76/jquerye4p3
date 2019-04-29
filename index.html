@@ -1,43 +1,47 @@
 <!DOCTYPE html>
-<html lang="fr" dir="ltr" />
+<html lang="fr" dir="ltr">
+
 <head>
   <meta charset="utf-8" />
   <title>Exercice4p3</title>
   <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-
   <input type="button" id="buttonA" value="A" name"A" />
-  <input type="button" id="buttonB" value="B" name"B"/>
-  <input type="button" id="buttonC" value="C"name"C" />
-  <input type="button" id="buttonD" value="D"name"D" />
-  <input type="button" id="buttonE" value="E"name"E" />
+  <input type="button" id="buttonB" value="B" name"B" />
+  <input type="button" id="buttonC" value="C" name"C" />
+  <input type="button" id="buttonD" value="D" name"D" />
+  <input type="button" id="buttonE" value="E" name"E" />
 
-  <div class="rectangle">
+  <div id="rectangle" class="rectangle">
   </div>
 
-    <script src="assets\js\jquery-3.3.1.min.js"></script>
-    <script type="text/javascript">
+  <script src="assets\js\jquery-3.3.1.min.js"></script>
+  <script type="text/javascript">
 
-    $('#buttonA').click(function(){
-    var size = $('#rectangle').css('height','+10px');
-    if $('#rectangle').css('height'))=='100px');
-    $('#rectangle').css('height','10px');
-});
-    $('buttonB').click(function(){
-    $('#rectangle').css('background-color','green');
-});
-    $('buttonC').click(function(){
-    $('#rectangle').css('background-color','#f73b09');
-});
-    $('buttonD').click(function(){
-    $('#rectangle').hide();
-});
+  $('#buttonA').click(function(){
+    if (($('#rectangle').css('height'))=='100px'){
+      alert('cest trop grand');
+       $('#rectangle').css('height','10px');
+}
+      $('#rectangle').css('height','+=10px');
+  });
 
-    $('buttonE').click(function(){
-    $('#rectangle').show();
-});
+    $('#buttonB').click(function(){
+      $('#rectangle').css('background-color', 'green');
+    });
+    $('#buttonC').click(function(){
+      $('#rectangle').css('background-color', '#f73b09');
+    });
+    $('#buttonD').click(function(){
+      $('#rectangle').hide();
+    });
+    $('#buttonE').click(function(){
+      $('#rectangle').show();
+    });
 
   </script>
-  </body>
-  </html>
+</body>
+
+</html>
